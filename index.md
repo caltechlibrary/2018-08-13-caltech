@@ -312,11 +312,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
         <li>Run the installer and follow the steps bellow:
           <ol>
-            {% comment %} Git 2.8.2 Setup {% endcomment %}
-            {% comment %} Information {% endcomment %}
-            <li>Click on "Next".</li>
-            {% comment %} Select Components {% endcomment %}
-            <li>Click on "Next".</li>
+            {% comment %} Git 2.18.0 Setup {% endcomment %}
+            {% comment %} Information, Select Components, {% endcomment %}
+            <li>Click on "Next" four times (two times if you've previously
+installed Git).  You don't need to change anything
+in the Information, location, components, and start menu screens.</li>
+            <strong>
+            <li>Select “Use the nano editor by default” and click on “Next”.</li>
             {% comment %} Adjusting your PATH environment {% endcomment %}
             <li>
               <strong>
@@ -336,7 +338,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
             {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
             <li>
               <strong>
-                Keep "Use Windows' default console window" selected and click on "Next".
+                Select "Use Windows' default console window" and click on "Next".
               </strong>
             </li>
             {% comment %} Configuring experimental performance tweaks {% endcomment %}
@@ -407,7 +409,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
     for keeping your email address private</a> provided at GitHub.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
@@ -458,22 +459,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">
-          {% if page.carpentry == "swc" %}
-          Software Carpentry
-          {% elsif page.carpentry == "dc" %}
-          Data Carpentry
-          {% elsif page.carpentry == "lc" %}
-          Library Carpentry
-          {% endif %}
-          Windows installer
-	</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
+        It is installed along with Git.
       </p>
       <p>
         Others editors that you can use are
