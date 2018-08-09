@@ -319,6 +319,7 @@ installed Git).  You don't need to change anything
 in the Information, location, components, and start menu screens.</li>
             <strong>
             <li>Select “Use the nano editor by default” and click on “Next”.</li>
+            </strong>
             {% comment %} Adjusting your PATH environment {% endcomment %}
             <li>
               <strong>
