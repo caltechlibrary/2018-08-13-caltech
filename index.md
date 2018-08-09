@@ -313,18 +313,19 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <li>Run the installer and follow the steps bellow:
           <ol>
             {% comment %} Git 2.18.0 Setup {% endcomment %}
-            {% comment %} Information, Select Components, {% endcomment %}
-            <li>Click on "Next" four times (two times if you've previously
-installed Git).  You don't need to change anything
-in the Information, location, components, and start menu screens.</li>
-            <strong>
-            <li>Select “Use the nano editor by default” and click on “Next”.</li>
-            </strong>
+            <li>
+                Click on "Next" four times (two times if you've previously
+                installed Git).  You don't need to change anything
+                in the Information, location, components, and start menu screens.
+            </li>
+            <li>
+                <strong>
+                Select “Use the nano editor by default” and click on “Next”.
+                </strong>
+            </li>
             {% comment %} Adjusting your PATH environment {% endcomment %}
             <li>
-              <strong>
                 Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
-              </strong>
                 If you forgot to do this programs that you need for the workshop will not work properly.
                 If this happens rerun the installer and select the appropriate option.
             </li>
@@ -332,9 +333,7 @@ in the Information, location, components, and start menu screens.</li>
             <li>Click on "Next".</li>
             {% comment %} Configuring the line ending conversions {% endcomment %}
             <li>
-              <strong>
                 Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-              </strong>
             </li>
             {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
             <li>
